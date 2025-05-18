@@ -1,0 +1,13 @@
+.containerSearch {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  width: 280px;
+
+  input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 30px;
+  }
+}
