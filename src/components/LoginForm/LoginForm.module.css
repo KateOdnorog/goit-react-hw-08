@@ -1,0 +1,47 @@
+.containerLoginForm {
+  margin: 40px auto 40px 40%;
+  padding: 0;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    width: 350px;
+    align-items: center;
+    background-color: aliceblue;
+  }
+  label {
+    width: 300px;
+  }
+  input {
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  button {
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(204, 247, 245);
+    font-weight: 500;
+  }
+  span {
+    font-weight: 500;
+  }
+}
+
+.link {
+  color: brown;
+  font-weight: 500;
+  font-size: small;
+}
+
+.error {
+  color: red;
+}

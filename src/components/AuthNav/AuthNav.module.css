@@ -1,0 +1,16 @@
+.authNav {
+  display: flex;
+  gap: 30px;
+}
+
+.navLink {
+  font-weight: 500;
+  font-size: large;
+  color: black;
+  text-decoration: none;
+}
+
+.navLinkActive {
+  color: darkslateblue;
+  text-decoration: underline;
+}

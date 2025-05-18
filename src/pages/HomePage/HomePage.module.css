@@ -1,0 +1,24 @@
+.homepage {
+  text-align: center;
+  padding: 50px 20px;
+  color: #1c1d20;
+}
+
+.homepageTitle {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.homepageSubtitle {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.homepageDescription {
+  font-size: 16px;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

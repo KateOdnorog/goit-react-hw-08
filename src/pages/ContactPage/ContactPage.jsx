@@ -1,14 +1,15 @@
-import ContactForm from "../ContactForm/ContactForm";
-import SearchBox from "../SearchBox/SearchBox";
-import ContactList from "../ContactList/ContactList";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import SearchBox from "../../components/SearchBox/SearchBox";
+import ContactList from "../../components/ContactList/ContactList";
+import Loader from "../../components/Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchContacts } from "../../redux/contactsOps";
-import { selectError } from "../../redux/contactsSlice";
-import Loader from "../Loader/Loader";
+import { fetchContacts } from "../../redux/contacts/operations";
+import { selectError } from "../../redux/contacts/selectors";
 
-const App = () => {
+const ContactPage = () => {
   const dispatch = useDispatch();
+
   const error = useSelector(selectError);
 
   useEffect(() => {
@@ -27,4 +28,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default ContactPage;

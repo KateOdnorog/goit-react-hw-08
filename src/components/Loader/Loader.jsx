@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { FadeLoader } from "react-spinners";
-import { selectLoading } from "../../redux/contactsSlice.js";
+import { selectLoading } from "../../redux/contacts/selectors";
 
 const Loader = () => {
   const override = {

@@ -1,8 +1,10 @@
-import s from "./Contact.module.css";
+import { useDispatch } from "react-redux";
+import { deleteContact } from "../../redux/contacts/operations";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
-import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import IconButton from "@mui/material/IconButton";
+import DeleteIcon from "@mui/icons-material/Delete";
+import s from "./Contact.module.css";
 
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
@@ -19,9 +21,9 @@ const Contact = ({ contact }) => {
           <MdOutlinePhoneAndroid /> {contact.number}
         </p>
       </div>
-      <button type="button" onClick={handleDelete}>
-        Delete
-      </button>
+      <IconButton aria-label="delete" onClick={handleDelete}>
+        <DeleteIcon />
+      </IconButton>
     </div>
   );
 };
